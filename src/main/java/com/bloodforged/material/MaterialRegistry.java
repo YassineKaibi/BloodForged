@@ -23,7 +23,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * - Can reload from JSON files
  * 
  * USAGE:
- * MaterialRegistry.INSTANCE.getMaterial(new Identifier("bloodforged", "bronze"))
+ * MaterialRegistry.INSTANCE.getMaterial(Identifier.of("bloodforged", "bronze"))
  */
 public class MaterialRegistry {
     
@@ -169,7 +169,7 @@ public class MaterialRegistry {
      *     .build();
      */
     public static MaterialBuilder builder(String namespace, String path) {
-        return new MaterialBuilder(new Identifier(namespace, path));
+        return new MaterialBuilder(Identifier.of(namespace, path));
     }
     
     public static class MaterialBuilder {

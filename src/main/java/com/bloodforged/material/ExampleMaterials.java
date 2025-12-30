@@ -13,9 +13,9 @@ import net.minecraft.util.Identifier;
 public class ExampleMaterials {
     
     // Part type identifiers
-    public static final Identifier PART_BLADE = new Identifier("bloodforged", "blade");
-    public static final Identifier PART_HANDLE = new Identifier("bloodforged", "handle");
-    public static final Identifier PART_GUARD = new Identifier("bloodforged", "guard");
+    public static final Identifier PART_BLADE = Identifier.of("bloodforged", "blade");
+    public static final Identifier PART_HANDLE = Identifier.of("bloodforged", "handle");
+    public static final Identifier PART_GUARD = Identifier.of("bloodforged", "guard");
     
     /**
      * Register all example materials.
@@ -40,7 +40,7 @@ public class ExampleMaterials {
      * Tier: 1 (copper/bronze tier)
      */
     private static void registerBronze() {
-        Identifier bronzeId = new Identifier("bloodforged", "bronze");
+        Identifier bronzeId = Identifier.of("bloodforged", "bronze");
         
         // Create the material
         Material bronze = MaterialRegistry.builder("bloodforged", "bronze")
@@ -96,7 +96,7 @@ public class ExampleMaterials {
      * Tier: 2 (iron tier)
      */
     private static void registerIron() {
-        Identifier ironId = new Identifier("bloodforged", "iron");
+        Identifier ironId = Identifier.of("bloodforged", "iron");
         
         Material iron = MaterialRegistry.builder("bloodforged", "iron")
             .displayName("Iron")
@@ -147,7 +147,7 @@ public class ExampleMaterials {
      * Tier: 3 (diamond tier)
      */
     private static void registerSteel() {
-        Identifier steelId = new Identifier("bloodforged", "steel");
+        Identifier steelId = Identifier.of("bloodforged", "steel");
         
         Material steel = MaterialRegistry.builder("bloodforged", "steel")
             .displayName("Steel")
@@ -194,9 +194,9 @@ public class ExampleMaterials {
         // - Bronze handle (quality 70%)
         // - Iron guard (quality 90%)
         
-        Identifier steelId = new Identifier("bloodforged", "steel");
-        Identifier bronzeId = new Identifier("bloodforged", "bronze");
-        Identifier ironId = new Identifier("bloodforged", "iron");
+        Identifier steelId = Identifier.of("bloodforged", "steel");
+        Identifier bronzeId = Identifier.of("bloodforged", "bronze");
+        Identifier ironId = Identifier.of("bloodforged", "iron");
         
         // Get base stats
         MaterialStats bladeStat = MaterialRegistry.INSTANCE.getStats(steelId, PART_BLADE);
