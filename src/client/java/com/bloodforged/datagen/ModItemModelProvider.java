@@ -1,5 +1,6 @@
 package com.bloodforged.datagen;
 
+import com.bloodforged.block.ModBlocks;
 import com.bloodforged.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
@@ -15,7 +16,10 @@ public class ModItemModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        // Block models later
+        // Simple cube blocks
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FORGE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OPEN_FURNACE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SMITHING_ANVIL);
     }
 
     @Override
