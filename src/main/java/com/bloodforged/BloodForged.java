@@ -1,5 +1,7 @@
 package com.bloodforged;
 
+import com.bloodforged.block.ModBlocks;
+import com.bloodforged.component.ModDataComponents;
 import com.bloodforged.item.ModItems;
 import com.bloodforged.material.ExampleMaterials;
 import net.fabricmc.api.ModInitializer;
@@ -14,7 +16,13 @@ public class BloodForged implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Initializing BloodForged");
 
-        ModItems.registerModItems();
+        //FIRST - components
+        ModDataComponents.registerDataComponents();
+        //SECOND - materials
         ExampleMaterials.register();
+        //THIRD - items
+        ModItems.registerModItems();
+        //FOURTH - blocks
+        ModBlocks.registerModBlocks(); // Add this line
     }
 }
