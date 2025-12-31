@@ -1,0 +1,29 @@
+{
+  "container.bloodforged.smithing_anvil": "Smithing Anvil",
+  
+  "block.bloodforged.smithing_anvil": "Smithing Anvil",
+  "block.bloodforged.forge": "Forge",
+  "block.bloodforged.open_furnace": "Open Furnace",
+  
+  "item.bloodforged.raw_copper": "Raw Copper",
+  "item.bloodforged.copper_ingot": "Copper Ingot",
+  "item.bloodforged.copper_dust": "Copper Dust",
+  "item.bloodforged.raw_tin": "Raw Tin",
+  "item.bloodforged.tin_ingot": "Tin Ingot",
+  "item.bloodforged.tin_dust": "Tin Dust",
+  "item.bloodforged.bronze_ingot": "Bronze Ingot",
+  "item.bloodforged.bronze_dust": "Bronze Dust",
+  "item.bloodforged.iron_dust": "Iron Dust",
+  "item.bloodforged.steel_ingot": "Steel Ingot",
+  "item.bloodforged.steel_dust": "Steel Dust",
+  "item.bloodforged.carbon": "Carbon",
+  "item.bloodforged.flux": "Flux",
+  
+  "item.bloodforged.tool_blade": "Tool Blade",
+  "item.bloodforged.tool_handle": "Tool Handle",
+  "item.bloodforged.tool_guard": "Tool Guard",
+  
+  "tooltip.bloodforged.temperature": "Temperature: %s°C",
+  "tooltip.bloodforged.quality": "Quality: %s%%",
+  "tooltip.bloodforged.material": "Material: %s"
+}
